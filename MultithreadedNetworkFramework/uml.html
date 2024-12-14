@@ -1,0 +1,40 @@
+﻿+----------------------+
+|      RequestManager  |
++----------------------+
+| - requestQueue       |
+| - threadPool         |
+| - cacheManager       |
+| - middlewareManager  |
++----------------------+
+| + addRequest()       |
+| + cancelRequest()    |
+| + setPriority()      |
++----------------------+
+
++----------------------+
+|      ThreadPool      |
++----------------------+
+| - maxThreads         |
+| - activeThreads      |
++----------------------+
+| + executeTask()      |
+| + adjustPoolSize()   |
++----------------------+
+
++----------------------+
+|      CacheManager    |
++----------------------+
+| - cacheStorage       |
++----------------------+
+| + getCachedResponse()|
+| + updateCache()      |
++----------------------+
+
++----------------------+
+|   MiddlewareManager  |
++----------------------+
+| - middlewareList     |
++----------------------+
+| + register()         |
+| + executeMiddleware()|
++----------------------+
